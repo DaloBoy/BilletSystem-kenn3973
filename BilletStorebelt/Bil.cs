@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace BilletStorebelt
 {
-    public class Bil
+    public class Bil : Køretøjer
     {
-        public string Nummerplade { get; set; }
-        public DateTime Dato { get; set; }
+        public Bil(string nummerplade)
+            : base(nummerplade)
+        {
 
-        public int Pris()
+        }
+
+        public override int Pris()
         {
             return 240;
         }
 
-        public string Køretøj()
+        public override string Køretøj()
         {
             return "Bil";
         }

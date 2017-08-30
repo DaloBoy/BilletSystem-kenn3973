@@ -15,7 +15,7 @@ namespace BilletStorebelt.Tests
         public void PrisTestBil240()
         {
             //Arrange
-            var bil = new Bil();
+            var bil = new Bil("BeepBeepImAJeepin");
             //Act
             int pris = bil.Pris();
             //Assert
@@ -26,7 +26,7 @@ namespace BilletStorebelt.Tests
         public void KøretøjTestBil()
         {
             //Arrange
-            var bil = new Bil();
+            var bil = new Bil("BeepBeepImAJeepin");
             //Act
             string køretøj = bil.Køretøj();
             //Assert

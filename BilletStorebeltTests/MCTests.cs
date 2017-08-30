@@ -15,7 +15,7 @@ namespace BilletStorebelt.Tests
         public void PrisTestMC125()
         {
             //Arrange
-            var mc = new MC();
+            var mc = new MC("BeepBeepImABicycle");
             //Act
             int pris = mc.Pris();
             //Assert
@@ -26,7 +26,7 @@ namespace BilletStorebelt.Tests
         public void KøretøjTestMC()
         {
             //Arrange
-            var mc = new MC();
+            var mc = new MC("BeepBeepImABicycle");
             //Act
             string køretøj = mc.Køretøj();
             //Assert

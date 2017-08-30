@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace BilletStorebelt
 {
-    public class MC
+    public class MC : Køretøjer
     {
-        public string Nummerplade { get; set; }
-        public DateTime Dato { get; set; }
+        public MC(string nummerplade)
+            : base(nummerplade)
+        {
+            
+        }
 
-        public int Pris()
+        public override int Pris()
         {
             return 125;
         }
 
-        public string Køretøj()
+        public override string Køretøj()
         {
             return "MC";
         }

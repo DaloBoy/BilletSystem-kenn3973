@@ -11,11 +11,6 @@ namespace BilletStorebelt
         public string Nummerplade { get; set; }
         public DateTime Dato { get; set; }
 
-        public Bil()
-        {
-
-        }
-
         public int Pris()
         {
             return 240;

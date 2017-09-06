@@ -6,27 +6,25 @@ using System.Threading.Tasks;
 
 namespace BilletStorebelt
 {
-    public class MC : Køretøjer
+    public class MCØresund : Køretøjer
     {
-        public MC(string nummerplade, bool broBizz)
-            : base(nummerplade, broBizz)
+        public MCØresund(string nummerplade, bool broBizz) : base(nummerplade, broBizz)
         {
-
-        }
-
-        public override int Pris()
-        {
-            int pris = 125;
-
-            if (BroBizz)
-                return pris * 95 / 100;
-
-            return pris;
         }
 
         public override string Køretøj()
         {
-            return "MC";
+            return "Øresund MC";
+        }
+
+        public override int Pris()
+        {
+            int pris = 210;
+
+            if (BroBizz)
+                return pris = 73;
+
+            return pris;
         }
     }
 }

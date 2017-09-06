@@ -8,15 +8,23 @@ namespace BilletStorebelt
 {
     public class Bil : Køretøjer
     {
-        public Bil(string nummerplade)
-            : base(nummerplade)
+        public Bil(string nummerplade, bool broBizz)
+            : base(nummerplade, broBizz)
         {
 
         }
 
         public override int Pris()
         {
-            return 240;
+            int pris = 240;
+
+            if (base.Dato.DayOfWeek == DayOfWeek.Saturday || base.Dato.DayOfWeek == DayOfWeek.Sunday)
+                pris = pris * 80 / 100;
+
+            if (BroBizz)
+                return pris * 95 / 100;
+
+            return pris;
         }
 
         public override string Køretøj()

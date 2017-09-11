@@ -8,6 +8,7 @@ namespace BilletStorebelt
 {
     public class MCØresund : Køretøjer
     {
+        
         public MCØresund(string nummerplade, bool broBizz) : base(nummerplade, broBizz)
         {
         }

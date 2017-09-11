@@ -8,12 +8,14 @@ namespace BilletStorebelt
 {
     public class MC : Køretøjer
     {
+        
         public MC(string nummerplade, bool broBizz)
             : base(nummerplade, broBizz)
         {
 
         }
 
+        
         public override int Pris()
         {
             int pris = 125;
@@ -24,6 +26,7 @@ namespace BilletStorebelt
             return pris;
         }
 
+        
         public override string Køretøj()
         {
             return "MC";

@@ -8,16 +8,19 @@ namespace BilletStorebelt
 {
     public abstract class Køretøjer
     {
+        
         public string Nummerplade { get; set; }
         public DateTime Dato { get; set; }
         public bool BroBizz { get; set; }
 
+        
         public Køretøjer(string nummerplade, bool broBizz)
         {
             this.Nummerplade = nummerplade;
             this.BroBizz = broBizz;
         }
 
+        
         public abstract int Pris();
 
         public abstract string Køretøj();

@@ -8,15 +8,18 @@ namespace BilletStorebelt
 {
     public class BilØresund : Køretøjer
     {
+       
         public BilØresund(string nummerplade, bool broBizz) : base(nummerplade, broBizz)
         {
         }
 
+        
         public override string Køretøj()
         {
             return "Øresund Bil";
         }
 
+        
         public override int Pris()
         {
             int pris = 410;
